@@ -1,7 +1,6 @@
 import 'dart:math';
 
 import 'package:dicoding_newbie/screen/login.dart';
-import 'package:dicoding_newbie/widget/clipperWidget.dart';
 import 'package:flutter/material.dart';
 
 class RegisterPage extends StatefulWidget {
@@ -20,31 +19,7 @@ class _RegisterPageState extends State<RegisterPage> {
           height: MediaQuery.of(context).size.height,
           child: Stack(
             children: [
-              Positioned(
-                top: -MediaQuery.of(context).size.height * .15,
-                right: -MediaQuery.of(context).size.width * .4,
-                child: Container(
-                    child: Transform.rotate(
-                      angle: -pi / 3.5,
-                      child: ClipPath(
-                        clipper: ClipperWidget(),
-                        child: Container(
-                          height: MediaQuery.of(context).size.height * .5,
-                          width: MediaQuery.of(context).size.width,
-                          decoration: BoxDecoration(
-                            gradient: LinearGradient(
-                              begin: Alignment.topCenter,
-                              end: Alignment.bottomCenter,
-                              colors: [
-                                Color(0xffE6E6E6),
-                                Colors.greenAccent
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
-                    )),
-              ),
+
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 40),
                 child: SingleChildScrollView(
