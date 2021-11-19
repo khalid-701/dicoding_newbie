@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
             height: MediaQuery.of(context).size.height,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.all(Radius.circular(5)),
-              boxShadow: <BoxShadow>[
+              boxShadow: [
                 BoxShadow(
                     color: Colors.grey.shade200,
                     offset: Offset(2, 4),
@@ -26,8 +26,9 @@ class HomePage extends StatelessWidget {
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
                 colors: [
-                  Color(0xffE6E6E6),
                   Colors.greenAccent,
+                  Color(0xffE6E6E6),
+
                 ],
               ),
             ),
@@ -67,7 +68,7 @@ class HomePage extends StatelessWidget {
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.all(Radius.circular(5)),
-                        boxShadow: <BoxShadow>[
+                        boxShadow: [
                           BoxShadow(
                               color: Color(0xffE6E6E6).withAlpha(100),
                               offset: Offset(2, 4),
@@ -99,7 +100,7 @@ class HomePage extends StatelessWidget {
                     ),
                     child: Text(
                       'Daftar',
-                      style: TextStyle(fontSize: 20, color: Colors.white),
+                      style: TextStyle(fontSize: 20, color: Colors.black),
                     ),
                   ),
                 ),

@@ -117,41 +117,38 @@ class _LoginPageState extends State<LoginPage> {
                           ],
                         ),
                         SizedBox(height: 20),
-                        // GestureDetector(
-                        //   onTap: () => Navigator.pushReplacement(
-                        //     context,
-                        //     MaterialPageRoute(
-                        //       builder: (context) => HomeScreen(),
-                        //     ),
-                        //   ),
-                        //   child: Container(
-                        //     width: MediaQuery.of(context).size.width,
-                        //     padding: EdgeInsets.symmetric(vertical: 15),
-                        //     alignment: Alignment.center,
-                        //     decoration: BoxDecoration(
-                        //       borderRadius: BorderRadius.all(Radius.circular(5)),
-                        //       boxShadow: <BoxShadow>[
-                        //         BoxShadow(
-                        //             color: Colors.grey.shade200,
-                        //             offset: Offset(2, 4),
-                        //             blurRadius: 5,
-                        //             spreadRadius: 2)
-                        //       ],
-                        //       gradient: LinearGradient(
-                        //         begin: Alignment.centerLeft,
-                        //         end: Alignment.centerRight,
-                        //         colors: [
-                        //           Color(0xff14279B),
-                        //           Color(0xff14279B),
-                        //         ],
-                        //       ),
-                        //     ),
-                        //     child: Text(
-                        //       'Login',
-                        //       style: TextStyle(fontSize: 20, color: Colors.white),
-                        //     ),
-                        //   ),
-                        // ),
+                        GestureDetector(
+                          onTap: () {
+                            print("masuk di klik");
+                          },
+                          child: Container(
+                            width: MediaQuery.of(context).size.width,
+                            padding: EdgeInsets.symmetric(vertical: 15),
+                            alignment: Alignment.center,
+                            decoration: BoxDecoration(
+                              borderRadius: const BorderRadius.all(Radius.circular(5)),
+                              boxShadow: [
+                                BoxShadow(
+                                    color: Colors.grey.shade200,
+                                    offset: Offset(2, 4),
+                                    blurRadius: 5,
+                                    spreadRadius: 2)
+                              ],
+                              gradient: LinearGradient(
+                                begin: Alignment.centerLeft,
+                                end: Alignment.centerRight,
+                                colors: [
+                                  Colors.greenAccent,
+                                  Colors.greenAccent,
+                                ],
+                              ),
+                            ),
+                            child: Text(
+                              'Masuk',
+                              style: TextStyle(fontSize: 20, color: Colors.black),
+                            ),
+                          ),
+                        ),
                         Container(
                           padding: EdgeInsets.symmetric(vertical: 10),
                           alignment: Alignment.centerRight,
